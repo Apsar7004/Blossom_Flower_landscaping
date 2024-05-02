@@ -1,7 +1,7 @@
 class SpecialHeader extends HTMLElement{
     connectedCallback(){
         let pathname = window.location.pathname;
-        pathname = pathname.substring(pathname.lastIndexOf('/') + 1);
+        pathname = pathname.substring(pathname.lastIndexOf('/'));
         this.innerHTML = 
         `<header>
         <!-- Spinner Start -->
@@ -42,7 +42,7 @@ class SpecialHeader extends HTMLElement{
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="./index.html" class="nav-item nav-link ${pathname === 'index.html'| '' ? 'active' : ''}">Home</a>
+                <a href="./index.html" class="nav-item nav-link ${pathname === 'index.html'|| '' ? 'active' : ''}">Home</a>
                 <a href="./about.html" class="nav-item nav-link ${pathname === 'about.html' ? 'active' : ''}">About</a>
                 <a href="./service.html" class="nav-item nav-link ${pathname === 'service.html' ? 'active' : ''}">Services</a>
                 <a href="./accreditation.html" class="nav-item nav-link ${pathname === 'accreditation.html' ? 'active' : ''}">Accreditation</a>
