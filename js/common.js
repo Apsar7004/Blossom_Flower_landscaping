@@ -42,12 +42,12 @@ class SpecialHeader extends HTMLElement{
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="./index.html" class="nav-item nav-link ${pathname === 'index.html'|| '' ? 'active' : ''}">Home</a>
-                <a href="./about.html" class="nav-item nav-link ${pathname === 'about.html' ? 'active' : ''}">About</a>
-                <a href="./service.html" class="nav-item nav-link ${pathname === 'service.html' ? 'active' : ''}">Services</a>
-                <a href="./accreditation.html" class="nav-item nav-link ${pathname === 'accreditation.html' ? 'active' : ''}">Accreditation</a>
-                <a href="./project.html" class="nav-item nav-link ${pathname === 'project.html' ? 'active' : ''}">Projects</a>
-                <a href="./contact.html" class="nav-item nav-link ${pathname === 'contact.html' ? 'active' : ''}">Contact</a>
+                <a href="./index.html" class="nav-item nav-link ${pathname === '/index.html'|| '/' ? 'active' : ''}">Home</a>
+                <a href="./about.html" class="nav-item nav-link ${pathname === '/about.html' ? 'active' : ''}">About</a>
+                <a href="./service.html" class="nav-item nav-link ${pathname === '/service.html' ? 'active' : ''}">Services</a>
+                <a href="./accreditation.html" class="nav-item nav-link ${pathname === '/accreditation.html' ? 'active' : ''}">Accreditation</a>
+                <a href="./project.html" class="nav-item nav-link ${pathname === '/project.html' ? 'active' : ''}">Projects</a>
+                <a href="./contact.html" class="nav-item nav-link ${pathname === '/contact.html' ? 'active' : ''}">Contact</a>
                 <a href="./asserts/pdf/Blossom-portfolio.pdf" class="nav-item nav-link">
                     <img width="25" height="25" src="./img/icon/download-icon.svg" />
                     Protfolio
